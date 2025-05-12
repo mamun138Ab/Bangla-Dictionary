@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Bangla Dictionary</string>
+    <string name="about">about</string>
+    <string name="hint">Search</string>
+    <string name="ortho">অর্থ</string>
+    <string name="mainword">Main Word</string>
+    <string name="syn">Synonym</string>
+    <string name="anto">Antonym</string>
+    <string name="parts">Parts of speech</string>
+    <string name="eample">Example</string>
 </resources>

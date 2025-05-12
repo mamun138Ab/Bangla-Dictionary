@@ -3,15 +3,15 @@
 
 
     <item
-        android:title="About"
+        android:title="@string/about"
         android:id="@+id/about"
-        ></item>
+        />
     <item
-        android:title="About"
+        android:title="@string/about"
         android:id="@+id/privacy"
-        ></item>
+       />
     <item
-        android:title="About"
+        android:title="@string/about"
         android:id="@+id/dev"
-        ></item>
+      />
 </menu>

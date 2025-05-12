@@ -20,9 +20,9 @@ public class dataBaseHelper extends SQLiteAssetHelper {
 
     public Cursor searchword(String word){
         SQLiteDatabase db=this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM Dictionary WHERE word LIKE ?", new String[]{ word + "%"});
+        Cursor cursors = db.rawQuery("SELECT * FROM Dictionary WHERE word LIKE ?", new String[]{ word + "%"});
 
-        return cursor;
+        return cursors;
     }
     public Cursor getWordDetails(String word) {
         SQLiteDatabase db = this.getReadableDatabase();
