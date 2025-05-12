@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.mamuncreates.bangladictionary'
-    compileSdk 35
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.mamuncreates.bangladictionary"
@@ -37,6 +37,6 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
 
 }
