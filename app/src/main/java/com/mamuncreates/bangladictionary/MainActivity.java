@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     mainword.setText(word);
                     meaning.setText(mean);
                     example.setText(ex);
-                    partsofspeech.setText("."+parts);
+                    partsofspeech.setText(parts);
 
                     ediiitext.setText(word);
                     ediiitext.setSelection(ediiitext.getText().length());
@@ -145,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         Cursor cursor=dataBaseHelper.searchword(query);
         if (cursor!=null&&cursor.getCount()>0){
             while (cursor.moveToNext()){
-                int id=cursor.getInt(0);
+                //int id=cursor.getInt(0);
                 String word=cursor.getString(1);
                 wordlist.add(word);
             }
@@ -169,10 +170,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (id==R.id.privacy){
 
+            Toast.makeText(MainActivity.this,"hello",Toast.LENGTH_LONG).show();
         } else if (id==R.id.about) {
-
+            Toast.makeText(MainActivity.this,"hello",Toast.LENGTH_LONG).show();
         } else if (id==R.id.dev) {
-
+            Toast.makeText(MainActivity.this,"hello",Toast.LENGTH_LONG).show();
         }
 
 
